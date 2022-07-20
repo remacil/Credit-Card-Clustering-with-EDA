@@ -116,19 +116,19 @@ Technique is combines clusters according to the distance between the furthest me
 in the plot above we can see the results of the metrics that we use, each of which has the highest value:
 
 **Silhouette Score:**
-- Ward: 0.597 on Cluster 8
-- Average: 0.598 on Cluster 8
-- Complete: 0.584 on Cluster 7
+- Ward: 0.59 on Cluster 8
+- Average: 0.61 on Cluster 7
+- Complete: 0.57 on Cluster 7
 
 **Davies Bouldin Score:**
-- Ward: 0.611 on Cluster 5
-- Average: 0.645 on Cluster 7
-- Complete: 0.692 on Cluster 4
+- Ward: 0.61 on Cluster 3
+- Average: 0.61 on Cluster 3
+- Complete: 0.70 on Cluster 4
  
 **Calinski Harabasz Score:**
-- Ward: 19691 on Cluster 8
-- Average: 19836 on Cluster 8
-- Complete: 17964 on Cluster 7
+- Ward: 19239 on Cluster 8
+- Average: 20532 on Cluster 8
+- Complete: 16579 on Cluster 7
 
 #### K-Means
 
@@ -149,10 +149,10 @@ At first glance we can segment with 4 or 5 clusters because it is the most signi
 In this case we decided to use 4 clusters with the assumption that there is a gradual decrease in the more gentle elbow method, the Silhouete score and Calinski Harabasz score are not the highest but sufficient because 4 is the point where the score increases significantly, when viewed from the Boudin Davies score it also becomes the highest scorer of the others.
 
 Each score for the 4 clusters is:
-- Elbow Method: 0.280
-- Silhouette: 0.593
-- Davies Bouldin: 0.606
-- Calinski Harabasz: 15748
+- Elbow Method: 0.279
+- Silhouette: 0.59
+- Davies Bouldin: 0.60
+- Calinski Harabasz: 15797
 
 #### K-Medoids
 
@@ -184,21 +184,21 @@ Scores in 4 clusters for each distance metric will be described below:
 
 Cosine:
 - Elbow Method: 0.061
-- Silhouette Score: 0.793
-- Davies Bouldin Score: 0.607
-- Calinski Harabasz Score: 15708
+- Silhouette Score: 0.79
+- Davies Bouldin Score: 0.60
+- Calinski Harabasz Score: 15759
 
 Euclidean:
-- Elbow Method: 0.263
-- Silhouette Score: 0.593
-- Davies Bouldin Score: 0.608
-- Calinski Harabasz Score: 15709
+- Elbow Method: 0.262
+- Silhouette Score: 0.59
+- Davies Bouldin Score: 0.60
+- Calinski Harabasz Score: 15759
  
 Manhattan:
-- Elbow Method: 0.336
-- Silhouette Score: 0.579
-- Davies Bouldin Score: 0.615
-- Calinski Harabasz Score: 15089
+- Elbow Method: 0.335
+- Silhouette Score: 0.58
+- Davies Bouldin Score: 0.61
+- Calinski Harabasz Score: 15139
 
 ### Final Model
 
