@@ -2,7 +2,8 @@
 
 by [Aditya Nugraha](https://github.com/dyt08/), [Dwi Pamuji Bagaskara](https://github.com/DwiPamuji), [Randy Irawani](https://github.com/remacil)
 
-![image](https://user-images.githubusercontent.com/99951561/179932257-b83cf081-d2fa-46cd-9e7e-43ac3ba496a7.png)
+![179932257-b83cf081-d2fa-46cd-9e7e-43ac3ba496a7](https://user-images.githubusercontent.com/99951561/179932968-b78ac0da-50f8-4b23-aa63-a06098dcd804.jpg)
+
 
 *Image Source: https://www.freepik.com/photos/card-machine*
 
@@ -83,7 +84,7 @@ One of the most important preprocessing steps in a Data Science project. Some of
 
 For the modeling, we decided to use PCA before we clustering. Since PCA could help to reduce the number of feature for easier interpretation and simplify the complex pattern in modeling.
 
-<img src="assets/pca.jpg" alt="PCA Information Extrated"/><br>
+![newplot](https://user-images.githubusercontent.com/99951561/179933192-9d2cbd2e-d6e9-4452-85c6-5398e9cece52.png)
 
 Because 2 features have a significant increase variance with a score of 74.25%, We will use this value in the future so that the feature that was 8 will be reduced to 2.
 
@@ -110,7 +111,7 @@ Technique is combines clusters according to the distance between the furthest me
 
 **Silhouette, Davies Bouldin, and Calinski Harabasz Score:**
 
-<img src="assets/agglo.jpg" alt="Agglomerative Metrics"/><br>
+![newplot (2)](https://user-images.githubusercontent.com/99951561/179992621-37a2b83e-6318-4e25-99f6-21c4d10c1705.png)
 
 in the plot above we can see the results of the metrics that we use, each of which has the highest value:
 
@@ -135,13 +136,15 @@ in the plot above we can see the results of the metrics that we use, each of whi
 
 **Elbow Method:**
 
-<img src="assets/elbow_kmeans.jpg" alt="K-Means Elbow Method"/><br>
+![newplot (3)](https://user-images.githubusercontent.com/99951561/179992678-0a0b7851-f76e-42ff-8617-344230cba072.png)
+
 
 At first glance we can segment with 4 or 5 clusters because it is the most significant decrease, this method is very objective so it will use our perspective by also comparing it with other metrics.
 
 **Silhouette, Davies Bouldin, and Calinski Harabasz Score:**
 
-<img src="assets/metric_kmeans.jpg" alt="K-Means Metrics"/><br>
+![newplot (4)](https://user-images.githubusercontent.com/99951561/179992759-62bc0973-a89c-4415-a05c-8cda512bf4bd.png)
+
 
 In this case we decided to use 4 clusters with the assumption that there is a gradual decrease in the more gentle elbow method, the Silhouete score and Calinski Harabasz score are not the highest but sufficient because 4 is the point where the score increases significantly, when viewed from the Boudin Davies score it also becomes the highest scorer of the others.
 
@@ -162,13 +165,15 @@ We use 3 distance metrics :
 
 **Elbow Method:**
 
-<img src="assets/elbow_kmedoids.jpg" alt="K-Medoids Elbow Method"/><br>
+![newplot (5)](https://user-images.githubusercontent.com/99951561/179992831-9d0a1464-448d-4c4d-b248-53aa7baac130.png)
+
 
 At first glance we can segment with 3 or 4 clusters  on all distance metrics because this is the most significant decrease, once again note that this method is very objective so will use our perspective by also comparing it to other metrics.
 
 **Silhouette, Davies Bouldin, and Calinski Harabasz Score:**
 
-<img src="assets/metric_kmedoids.jpg" alt="K-Medoids Metrics"/><br>
+![newplot (6)](https://user-images.githubusercontent.com/99951561/179992855-554f2d49-f54b-42df-8055-553584d4d12d.png)
+
 
 Same as kmeans, in this case we decided to use 4 clusters for all distance metrics with the respective assumptions:
 - Cosine: it can be seen that the silhouete score is not stable in the 3rd to 7th clusters so we look for the right point before there is instability, namely in 4 clusters, on Davies Bouldin itself is the lowest score compared to others, Calinski Harabasz also looks unstable like in the silhouette score
@@ -199,7 +204,8 @@ Manhattan:
 
 for the end of this project we decided to choose K-Medoids with 4 clusters and metric distance using Cosine because it is the best score compared to others.
 
-<img src="assets/kmedoids_pca.jpg" alt="K-Medoids Clustering PCA"/><br>
+![newplot (7)](https://user-images.githubusercontent.com/99951561/179992950-64457a87-5d3c-4a3a-aa4e-d4a91ed5bb2f.png)
+
 
 Seen in the scatter plot above, the division is done quite neatly with the centroids almost all approaching the busiest group in each cluster.
 
