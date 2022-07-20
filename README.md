@@ -2,7 +2,7 @@
 
 by [Aditya Nugraha](https://github.com/dyt08/), [Dwi Pamuji Bagaskara](https://github.com/DwiPamuji), [Randy Irawani](https://github.com/remacil)
 
-<img src="assets/illustration.jpg" alt="Card machine photo created by fanjianhua - www.freepik.com"/>
+![image](https://user-images.githubusercontent.com/99951561/179932257-b83cf081-d2fa-46cd-9e7e-43ac3ba496a7.png)
 
 *Image Source: https://www.freepik.com/photos/card-machine*
 
